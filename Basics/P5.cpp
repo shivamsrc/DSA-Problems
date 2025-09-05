@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+// Pattern Printing
+
 void print1(int n){
 
     for(int i=0; i<n; i++){
