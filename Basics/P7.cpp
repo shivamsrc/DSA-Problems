@@ -35,7 +35,7 @@ void explainSort(){
     cout<<endl;
 
 
-    // sroting between few numbers rather than whole
+    // sorting between few numbers rather than whole
     sort((v.begin())+1, (v.begin())+4);                          // sort[start, end)
 
     for(auto it : v){
@@ -108,6 +108,7 @@ void maxAndMin(){
     cout<<"max : "<<max<<endl;
     cout<<"min : "<<min<<endl;
 }
+
 int main(){
     maxAndMin();
 

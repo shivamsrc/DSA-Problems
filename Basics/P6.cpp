@@ -57,10 +57,12 @@ void explainVectors(){
     for(vector<int>::iterator it = v.begin(); it != v.end(); it++){
         cout<<*(it)<<" ";
     }
+    cout<<endl;
 
     for(auto it = v.begin(); it != v.end(); it++){                        // auto, automatically recognizes the data type to vector<int>::iterator
         cout<<*(it)<<" ";
     }
+    cout<<endl;
 
     for(auto it : v){
         cout<<it<<" ";
@@ -85,7 +87,7 @@ void explainVectors(){
     vec3.insert(vec3.begin(), 300);
     vec3.insert(vec3.begin()+1, 2, 200);
 
-    vector<int> copy(2, 50);
+    vector<int> copy(2, 50);                                // just the vector's name is 'copy'
     vec3.insert(vec3.end(), copy.begin(), copy.end());
     for(auto it = vec3.begin(); it != vec3.end(); it++){
         cout<<*(it)<<" ";
@@ -124,6 +126,7 @@ void explainList(){
     ls.emplace_back(2);
     ls.push_front(3);
     ls.emplace_front(4);
+    ls.pop_back();
 
     for(auto it : ls){
         cout<<it<<" ";
@@ -362,7 +365,7 @@ void unorderedMap(){
 
 
 int main(){
-    explainMap();
+    explainList();
 
     return 0;
 }
