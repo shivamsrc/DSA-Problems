@@ -109,7 +109,7 @@ int maxFrequency(vector<int>& nums, int k) {
     sort(nums.begin(), nums.end());
     long long left = 0;
     long long operations = 0;                                    // increment
-    long long maxFreq = 1;                                      // no. of elements in the valid window
+    long long maxFreq = 1;                                      // max of no. of elements in the valid window
 
     for(int right = 1; right<nums.size(); right++){
 
