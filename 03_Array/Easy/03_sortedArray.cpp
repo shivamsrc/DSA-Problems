@@ -4,15 +4,14 @@ using namespace std;
 // check if the given array is sorted or not
 bool check(vector<int>& nums) {
     int size = nums.size();
-    bool sortedArr = true;
 
     for(int i=1; i<size; i++){
-        if(nums[i]>nums[i-1]){
-            sortedArr = false;
+        if(nums[i]<nums[i-1]){
+            return false;
         }
     }
 
-    return sortedArr;
+    return true;
 }
 
 // check if the given array is sorted or rotated, or not
