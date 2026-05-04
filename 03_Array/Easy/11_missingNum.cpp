@@ -33,7 +33,7 @@ int missingNumber2(vector<int>& nums){
         hash[nums[i]] = 1;                      // hash[nums[i]] = hash[3] = 1; and similarly others...
     }
 
-    for(int i=0; i<n; i++){
+    for(int i=0; i<=n; i++){
         if(hash[i]==0){                         // now check which hash element is not marked 1
             return i;
         }
