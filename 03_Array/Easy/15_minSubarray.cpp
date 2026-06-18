@@ -5,6 +5,8 @@ using namespace std;
 // return the minimal length of a subarray whose sum is greater than or equal to target. 
 // If there is no such subarray, return 0 instead.
 
+// same as the optimal of last one.
+
 int minSubArrayLen(int target, vector<int>& nums) {
     int n = nums.size();
     int left = 0;
